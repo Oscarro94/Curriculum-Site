@@ -324,13 +324,14 @@
             min-width: 300px;
         }
 
-        .about-me-text p {
-            margin-bottom: 1.5rem;
-            font-size: 1.15rem;
-            line-height: 1.9;
-            color: var(--text-dark);
-            text-align: justify;
-        }
+     .about-me-text p {
+    margin-bottom: 1.5rem;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: var(--text-dark);
+    text-align: justify;
+    padding: 0 1rem; /* Agrega espaciado lateral */
+}
 
         /* ===== SKILLS SECTION ===== */
         #skills-section {
@@ -625,7 +626,25 @@
             .about-me-content {
                 flex-direction: column;
                 text-align: center;
+                 gap: 2rem;
+        padding: 0 1rem; /* Espaciado en móviles */
             }
+
+             .about-me-text p {
+        font-size: 1rem; /* Texto más pequeño en móvil */
+        line-height: 1.7;
+        text-align: left; /* Cambiar de justify a left en móvil */
+        padding: 0 0.5rem;
+    }
+}
+    
+    .about-me-image img {
+        width: 250px; /* Imagen más pequeña en móvil */
+        height: 250px;
+    }
+    
+    #about-me-section {
+        padding: 4rem 1.5rem; /* Más espaciado lateral */
 
             .cv-download-hero {
                 flex-direction: column;
@@ -664,4 +683,26 @@
             .projects-container {
                 grid-template-columns: 1fr;
             }
+
+             .about-me-text p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+        text-align: left;
+        padding: 0;
+    }
+    
+    .about-me-image img {
+        width: 200px;
+        height: 200px;
+    }
+    
+    #about-me-section {
+        padding: 3rem 1rem;
+    }
+    
+    #about-me-section h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
         }
