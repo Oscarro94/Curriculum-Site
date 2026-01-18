@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar Romero | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/6894afcfd8.js" crossorigin="anonymous"></script>
+       <link rel="shortcut icon" href="imagenes/portafolio.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+    </head>
+<body>
+    <nav id="navbar">
+        <div id="brand">
+            <a href="#welcome-section">
+                <img src="imagenes/logo.png" alt="logo">
+            </a>
+        </div>
+        <button class="hamburger" aria-label="Toggle navigation">&#9776;</button>
+        <div class="nav-links">
+            <a href="#about-me-section" data-lang-key="about">About</a>
+            <a href="#skills-section" data-lang-key="skills">Skills</a>
+            <a href="#projects" data-lang-key="projects">Projects</a>
+            <a href="#social" data-lang-key="social">Social</a>
+            <div class="lang-selector">
+                <button id="lang-es">ES</button>
+                <button id="lang-en">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <header id="welcome-section">
+        <h1 data-lang-key="hi_there">Oscar Romero 🧑🏽‍💻</h1>
+        <p class="subtitle" data-lang-key="junior_programmer">Systems Engineer || Junior Programmer</p>
+
+        <div class="hero-buttons">
+            <div class="cv-download-hero">
+                <a href="https://drive.google.com/file/d/1kWqM1Legl75YaK6qvKDPpSJHAVLLipaP/preview" target="_blank" rel="noopener noreferrer" class="btn-cv" data-lang-key="download_cv_en">
+                    <i class="fas fa-file-download"></i> Download CV (EN)
+                </a>
+                <a href="https://drive.google.com/file/d/1TsqQEEeYFf5WHot88t8pLgPv3tEwBlIO/view?preview" target="_blank" rel="noopener noreferrer" class="btn-cv" data-lang-key="download_cv_es">
+                    <i class="fas fa-file-download"></i> Descargar CV (ES)
+                </a>
+            </div>
+            <a href="#about-me-section" class="btn-know-more" data-lang-key="know_more_button">
+                Learn more <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+
+        <div class="scrolldown">
+            <a href="#about-me-section"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </header>
+
+    <section id="about-me-section">
+        <h2 data-lang-key="about_me_title">About Me</h2>
+        <div class="about-me-content">
+            <div class="about-me-image">
+                <img src="./imagenes/me.jpg" alt="Oscar Romero">
+            </div>
+            <div class="about-me-text">
+                <p data-lang-key="about_me_text_p1">
+                    Systems Engineer with a deep passion for programming and a constant commitment to learning. 
+                    Capable of working under pressure while managing high workloads, as well as being independent 
+                    with little supervision. Currently, I am exploring new technologies such as JavaScript and Java, 
+                    with the aim of expanding my skills and staying at the forefront of this dynamic field.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills-section">
+        <h2 data-lang-key="skills_title">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+                <p data-lang-key="skill_js">Modern web development with ES6+</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-java"></i>
+                <h3>Java</h3>
+                <p data-lang-key="skill_java">Object-oriented programming</p>
+            </div>
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML & CSS</h3>
+                <p data-lang-key="skill_html">Responsive web design</p>
+            </div>
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>Databases</h3>
+                <p data-lang-key="skill_db">SQL and data management</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 data-lang-key="projects_title">Projects</h2>
+
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="javascript">JavaScript</button>
+            <button class="filter-btn" data-filter="java">Java</button>
+            <button class="filter-btn" data-filter="frameworks">Frameworks</button>
+        </div>
+
+        <div class="projects-container">
+            <a href="https://oscarro94.github.io/creationsbyida/" target="_blank" class="project-tile" data-category="javascript">
+                <img src="https://github.com/Oscarro94/Images/blob/main/idaCreation.jpeg?raw=true" alt="creationbyIda">
+                <p data-lang-key="project_ida_menu">Creations by Ida - Menu</p>
+            </a>
+            <a href="https://oscarro94.github.io/monsterFight/" target="_blank" class="project-tile" data-category="javascript">
+                <img src="https://github.com/Oscarro94/Images/blob/main/Monster.jpeg?raw=true" alt="monsterGame">
+                <p data-lang-key="project_monster_game">Monster Game</p>
+            </a>
+            <a href="https://oscarro94.github.io/DogPhotos/" target="_blank" class="project-tile" data-category="javascript">
+                <img src="https://github.com/Oscarro94/Images/blob/main/Dog-Page.jpeg?raw=true" alt="Dog-Page">
+                <p data-lang-key="project_dog_page">Dog Page</p>
+            </a>
+            <a href="https://oscarro94.github.io/RockPaperScissorsPractice/" target="_blank" class="project-tile" data-category="javascript">
+                <img src="https://github.com/Oscarro94/Images/blob/main/Rock-Paper-Scissor.jpeg?raw=true" alt="Rock-Paper-Scissor">
+                <p data-lang-key="project_rps_game">RockPaperScissor Game</p>
+            </a>
+            <a href="https://oscarro94.github.io/Languages/" target="_blank" class="project-tile" data-category="javascript">
+                <img src="https://github.com/Oscarro94/Images/blob/main/blog.jpeg?raw=true" alt="blog">
+                <p data-lang-key="project_blog">Blog</p>
+            </a>
+
+            <a href="https://github.com/Oscarro94/HelloWorld" target="_blank" class="project-tile" data-category="java">
+    <img src="https://raw.githubusercontent.com/Oscarro94/Images/main/hello.png" alt="Hello World File Manager">
+    <p data-lang-key="project_hello_world">Hello World File Manager</p>
+</a>
+        </div>
+
+        <!-- Mensaje de "En Proceso" -->
+        <div class="no-projects-message" id="noProjectsMessage">
+            <i class="fas fa-code"></i>
+            <h3 data-lang-key="no_projects_title">Projects in Development</h3>
+            <p data-lang-key="no_projects_text">Currently working on new projects with this technology. They will be available soon!</p>
+        </div>
+    </section>
+
+    <section id="social">
+        <h2 data-lang-key="social_media_title">Social Media</h2>
+        <p data-lang-key="find_me_on">You can find me on</p>
+        <ul class="social-ul">
+            <li><a id="profile-link" href="https://github.com/Oscarro94" target="_blank"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://twitter.com/Oscar0194" target="_blank"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100048366143390" target="_blank"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://www.instagram.com/oscarsr_09/" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/romeroscar/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+    </section>
+
+    <footer id="footer">
+        <p data-lang-key="footer_text">Made by Oscar Romero - 2026</p>
+    </footer>
+
+
+        <script src="script.js"></script>
+</body>
+</html>
