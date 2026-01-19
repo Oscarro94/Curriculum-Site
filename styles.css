@@ -342,7 +342,6 @@ a {
   line-height: 1.9;
   color: var(--text-dark);
   text-align: justify;
-  padding: 0 1rem; /* Agrega espaciado lateral */
 }
 
 /* ===== SKILLS SECTION ===== */
@@ -639,14 +638,16 @@ footer i {
     flex-direction: column;
     text-align: center;
     gap: 2rem;
-    padding: 0 1rem; /* Espaciado en móviles */
+  }
+
+  .about-me-text {
+    padding: 0 1.5rem; /* Espaciado lateral solo en móvil */
   }
 
   .about-me-text p {
-    font-size: 1rem; /* Texto más pequeño en móvil */
-    line-height: 1.7;
-    text-align: left; /* Cambiar de justify a left en móvil */
-    padding: 0 0.5rem;
+    font-size: 1.05rem; /* Texto más pequeño en móvil */
+    line-height: 1.8;
+    text-align: justify;
   }
 }
 
@@ -696,11 +697,14 @@ footer i {
     grid-template-columns: 1fr;
   }
 
+  .about-me-text {
+    padding: 0 1rem; /* Menos padding en móviles pequeños */
+  }
+
   .about-me-text p {
-    font-size: 0.95rem;
-    line-height: 1.6;
-    text-align: left;
-    padding: 0;
+    font-size: 1rem;
+    line-height: 1.7;
+    text-align: justify;
   }
 
   .about-me-image img {
@@ -714,6 +718,5 @@ footer i {
 
   #about-me-section h2 {
     font-size: 2rem;
-    margin-bottom: 2rem;
   }
 }
